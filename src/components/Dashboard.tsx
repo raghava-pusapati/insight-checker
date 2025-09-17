@@ -20,7 +20,6 @@ import {
 import { ContentAnalysisPanel } from "./ContentAnalysisPanel";
 import { RealTimeFeeds } from "./RealTimeFeeds";
 import { FactCheckResults } from "./FactCheckResults";
-import { ExplainableAI } from "./ExplainableAI";
 import { ThreatLevel } from "./ThreatLevel";
 import { MisinformationNetwork } from "./MisinformationNetwork";
 import { ViralPrediction } from "./ViralPrediction";
@@ -240,14 +239,11 @@ export const Dashboard = () => {
         </div>
 
         {/* Main Dashboard Panels */}
-        <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 mb-8">
-          <div className="xl:col-span-2 space-y-6">
-            <RealTimeFeeds />
-            <ContentAnalysisPanel />
-          </div>
+        <div className="p-6 mb-8">
+          
           <div className="space-y-6">
             <FactCheckResults />
-            <ExplainableAI />
+           
           </div>
         </div>
 

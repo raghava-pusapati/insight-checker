@@ -70,25 +70,14 @@ const navigationItems = [
     icon: BarChart3,
     description: "Advanced insights"
   },
-  {
-    title: "Educational Center",
-    url: "/education",
-    icon: GraduationCap,
-    description: "Learn & train",
-    badge: "Free"
-  },
+  
   {
     title: "Community",
     url: "/community",
     icon: Users,
     description: "Collaborative verification"
   },
-  {
-    title: "API Marketplace",
-    url: "/api-hub",
-    icon: Code,
-    description: "Developer tools"
-  },
+  
   {
     title: "Settings",
     url: "/settings",
@@ -131,8 +120,8 @@ export function AppSidebar() {
       </SidebarHeader>
 
       <SidebarContent>
-        <SidebarGroup>
-          <SidebarGroupLabel className={isCollapsed ? "sr-only" : ""}>
+        <SidebarGroup  className="bg-stone-600">
+          <SidebarGroupLabel className={isCollapsed ? "sr-only text-white" : ""}>
             Navigation
           </SidebarGroupLabel>
           <SidebarGroupContent>
@@ -176,7 +165,7 @@ export function AppSidebar() {
         </SidebarGroup>
 
         {!isCollapsed && (
-          <SidebarGroup className="mt-auto">
+          <SidebarGroup className="mt-auto bg-orange-200">
             <SidebarGroupLabel>Status</SidebarGroupLabel>
             <SidebarGroupContent>
               <div className="px-3 py-2 space-y-2">

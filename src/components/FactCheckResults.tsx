@@ -88,7 +88,7 @@ export const FactCheckResults = () => {
   const consensusVerdict = mockFactChecks.filter(check => check.verdict === "true").length > mockFactChecks.length / 2 ? "true" : "mixed";
 
   return (
-    <Card>
+    <Card >
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
           <Shield className="w-5 h-5 text-primary" />
